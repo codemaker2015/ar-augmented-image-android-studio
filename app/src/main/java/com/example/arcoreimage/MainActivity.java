@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         try (InputStream is = getAssets().open("marker.jpg")) {
             return BitmapFactory.decodeStream(is);
         } catch (IOException e) {
-            Log.e("imageload", "io exception", e);
+            Log.e("arcoreimage", "io exception", e);
         }
 
         return null;
